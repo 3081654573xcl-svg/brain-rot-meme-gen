@@ -2,7 +2,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { BRAINROT_PROMPT_TEMPLATE } from "../constants";
 
-const getAI = () => new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const getAI = () => new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || '' });
+
 
 export const analyzeImages = async (base64Images: string[]): Promise<string[]> => {
   const ai = getAI();
