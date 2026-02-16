@@ -1,0 +1,8 @@
+
+{
+  "name": "Brain Rot Meme Gen",
+  "description": "A chaotic community for generating, sharing, and voting on cursed, brain-rot style AI fused images.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
